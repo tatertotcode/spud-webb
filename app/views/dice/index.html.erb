@@ -1,0 +1,17 @@
+<div class="dice-game-container">
+<h1>Welcome to Elijah's Casino!</h1>
+
+<h2>No more bets! Lets go shooter! </h2>
+
+<% die1 = rand(1..6) %>
+<%# die1 %>
+<img src="/images/dice/<%= die1 %>.svg">
+
+<% die2 = rand(1..6) %>
+<img src="/images/dice/<%= die2 %>.svg">
+
+<%total = die1 + die2 %>
+<h3><%= "The total is #{total}" %></h3>
+
+<a href="/dice">Roll Again!</a>
+</div>
